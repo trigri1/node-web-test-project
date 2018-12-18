@@ -60,6 +60,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/portfolio', (req, res) => {
+    // res.send('About Page');
+    res.render('portfolio.hbs', {
+        title: 'Projects'
+    });
+});
+
 
 
 app.get('/bad', (req, res) => {
